@@ -19,12 +19,15 @@ nav {
   width: 100%;
   align-items: center;
   z-index: 3;
+  display: flex;
 }
 
 .nav__list {
   display: flex;
   justify-content: space-between;
   text-align: end;
+  align-items: center;
+  width: 100%;
 }
 
 .about {
@@ -45,4 +48,6 @@ nav {
 }
 .about__container--text {
   color: rgb(134, 112, 112);
+  text-align: center;
+  justify-content: center;
 }
