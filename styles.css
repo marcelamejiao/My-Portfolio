@@ -15,14 +15,34 @@ nav {
   border-bottom: 2px solid rgb(134, 112, 112);
   color: rgb(134, 112, 112);
   position: fixed;
-  height: 10vh;
+  height: 6vh;
   width: 100%;
   align-items: center;
-  z-index: 6;
+  z-index: 3;
 }
 
 .nav__list {
   display: flex;
   justify-content: space-between;
   text-align: end;
+}
+
+.about {
+  display: flex;
+}
+.about__container {
+  height: 500px;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about__container--img {
+  height: 80%;
+  width: 60%;
+  border-radius: 12%;
+  border: 4px solid rgb(213, 180, 180);
+}
+.about__container--text {
+  color: rgb(134, 112, 112);
 }
