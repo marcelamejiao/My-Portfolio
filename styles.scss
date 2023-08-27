@@ -20,12 +20,15 @@ nav {
 	width: 100%;
 	align-items: center;
 	z-index: 3;
+	display: flex;
 }
 
 .nav__list {
 	display: flex;
 	justify-content: space-between;
 	text-align: end;
+	align-items: center;
+	width: 100%;
 }
 
 .about {
