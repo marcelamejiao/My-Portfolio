@@ -7,18 +7,22 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<title>Marcela Mejia Portfolio</title>
 </head>
 <body>
 	<header>
 		<nav> 
-			<ul class="nav__list">
+			<ul class="nav__list nav__list--hidden" id="navList">
 					<li><a class="navbar__styling" href="#landingPage">Marcela Mejia Portfolio</a></li>
 					<li><a class="navbar__styling" href="#aboutMe">About Me</a></li>
 					<li><a class="navbar__styling" href="#skills">Skills</a></li>
 					<li><a class="navbar__styling" href="#projects">Projects</a></li>
 					<li><a class="navbar__styling" href="#contactMe">Contact Me</a></li>
 			</ul>
+			<a href="javascript:void(0);" class="hamburger" onclick="myFunction()">
+				<i class="fa fa-bars"></i>
+			</a>
 		</nav>
 	</header>
 	<main>
@@ -114,5 +118,6 @@
             
 	<a href="" target="_blank" "> Linkedin</a>
 </footer>
+<script src="./js/script.js" defer></script>
 </body>
 </html>

@@ -28,6 +28,7 @@ nav {
 }
 
 .nav__list {
+  background-color: rgb(248, 237, 227);
   display: flex;
   justify-content: space-around;
   text-align: end;
@@ -40,6 +41,28 @@ nav {
   color: rgb(133, 88, 111);
 }
 
+@media screen and (max-width: 600px) {
+  .nav__list {
+    flex-direction: column;
+    height: 100vh;
+  }
+  .nav__list--hidden {
+    display: none;
+  }
+  nav {
+    align-items: flex-start;
+  }
+  .hamburger {
+    padding: 1rem;
+    position: absolute;
+    right: 0;
+  }
+}
+@media screen and (min-width: 601px) {
+  .hamburger {
+    display: none;
+  }
+}
 .about {
   display: flex;
   margin-top: 8rem;
