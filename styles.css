@@ -37,17 +37,20 @@ nav {
 
 .navbar__styling {
   font-weight: 600;
+  color: rgb(133, 88, 111);
 }
 
 .about {
   display: flex;
+  margin-top: 8rem;
 }
 .about__container {
-  height: 500px;
+  height: 100%;
   width: 80%;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 .about__container--img {
   height: 80%;
@@ -55,10 +58,17 @@ nav {
   border-radius: 12%;
   border: 4px solid rgb(213, 180, 180);
 }
+.about__container--header {
+  color: rgb(133, 88, 111);
+  text-shadow: 0.4rem 0.4rem 0.4rem rgb(213, 180, 180);
+  font-size: 3rem;
+}
 .about__container--text {
   color: rgb(134, 112, 112);
   text-align: center;
   justify-content: center;
+  height: 60%;
+  width: 90%;
 }
 
 .landingpage__container {
