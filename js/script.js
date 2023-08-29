@@ -8,7 +8,7 @@ function myFunction() {
   }
 }
 
-document.querySelectorAll(".navbar__styling").forEach(function (linkElement) {
+document.querySelectorAll(".nav__list--link").forEach(function (linkElement) {
   linkElement.addEventListener("click", function () {
     navList.classList.add('nav__list--hidden');
   })
