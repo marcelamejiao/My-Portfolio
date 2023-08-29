@@ -1,14 +1,5 @@
-@mixin mobile {
-	@media screen and (max-width: 600px) {
-		@content
-	}
-};
-
-@mixin desktop {
-	@media screen and (min-width : 601px) {
-		@content
-	}
-};
+@use './partials/mixins.scss';
+@use './partials/palette.scss';
 
 * {
 	font-family: 'Roboto Mono', monospace;
@@ -24,13 +15,13 @@
 }
 
 body {
-	background-color: rgb(248, 237, 227);
+	background-color: palette.$main-background-color;
 }
 
 nav {
-	background-color: rgb(248, 237, 227);
-	border-bottom: 2px solid rgb(134, 112, 112);
-	color: rgb(134, 112, 112);
+	background-color: palette.$main-background-color;
+	border-bottom: 2px solid palette.$secondary-font-color;
+	color: palette.$secondary-font-color;
 	position: fixed;
 	height: 6vh;
 	width: 100%;
@@ -40,7 +31,7 @@ nav {
 }
 
 .nav__list {
-	background-color: rgb(248, 237, 227);
+	background-color: palette.$main-background-color;
 	display: flex;
 	justify-content: space-around;
 	text-align: end;
@@ -50,10 +41,10 @@ nav {
 
 .navbar__styling {
 	font-weight: 600;
-	color:rgb(133, 88, 111);
+	color: palette.$main-font-color;
 }
 
-@include mobile {
+@include mixins.mobile {
 	.nav__list {
 		flex-direction: column;
 		height: 100vh;
@@ -74,9 +65,40 @@ nav {
 	}
 }
 
-@include desktop {
+@include mixins.desktop {
 	.hamburger {
 		display: none;
+	}
+}
+
+.landingpage__container {
+	border: 1px solid palette.$secondary-background-color;
+	background-color: palette.$secondary-background-color;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+		
+	&--title {
+		color: palette.$tertiary-font-color;
+		font-size: 5rem;
+		text-shadow: 0.8rem 0.8rem 0.8rem palette.$secondary-font-color;
+	}
+
+	&--button {
+		border:2px solid palette.$main-background-color;
+		background-color: palette.$secondary-font-color;
+		color: palette.$tertiary-font-color;
+		padding: 0.8rem;
+		border-radius: 2rem;
+		margin-top: 3rem;
+
+		&:hover {
+			background-color: palette.$main-background-color;
+			border: 2px solid palette.$secondary-font-color;
+			color: palette.$secondary-font-color;
+		}
 	}
 }
 
@@ -96,17 +118,17 @@ nav {
 			height: 80%;
 			width: 60%;
 			border-radius: 12%;
-			border: 4px solid rgb(213, 180, 180);
+			border: 4px solid palette.$secondary-background-color;
 		}	
 
 		&--header {
-			color: rgb(133, 88, 111);
-			text-shadow: 0.4rem 0.4rem 0.4rem rgb(213, 180, 180);
+			color: palette.$main-font-color;
+			text-shadow: 0.4rem 0.4rem 0.4rem palette.$secondary-background-color;
 			font-size: 3rem;
 		}
 
 		&--text {
-			color: rgb(134, 112, 112);
+			color: palette.$secondary-font-color;
 			text-align: center;
 			justify-content: center;
 			height: 60%;
@@ -114,35 +136,3 @@ nav {
 		}
 	}
 }
-
-.landingpage__container {
-	border: 1px solid rgb(213, 180, 180);
-	background-color: rgb(213, 180, 180);
-	width: 100%;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-direction: column;
-		
-	&--title {
-		color:rgb(245, 235, 235);
-		font-size: 5rem;
-		text-shadow: 0.8rem 0.8rem 0.8rem rgb(134, 112, 112);
-	}
-
-	&--button {
-		border:2px solid rgb(248, 237, 227);
-		background-color:rgb(134, 112, 112);
-		color: white;
-		padding: 0.8rem;
-		border-radius: 2rem;
-		margin-top: 3rem;
-
-		&:hover {
-			background-color: rgb(248, 237, 227);
-			border: 2px solid rgb(134, 112, 112);
-			color: rgb(134, 112, 112);
-		}
-	}
-}
-
