@@ -1,21 +1,19 @@
-@mixin mobile {
-	@media screen and (max-width: 600px) {
-		@content
-	}
-};
+@use './partials/mixins.scss';
+@use './partials/palette.scss';
+@use './partials/typography.scss';
 
-@mixin desktop {
-	@media screen and (min-width : 601px) {
-		@content
-	}
-};
+// Whole app styles
 
 * {
-	font-family: 'Roboto Mono', monospace;
+	font-family: typography.$main-font;
 	padding: 0;
 	margin: 0;
 	text-decoration: none;
 	list-style-type: none;
+}
+
+body {
+	background-color: palette.$main-background-color;
 }
 
 .page__section {
@@ -23,62 +21,62 @@
 	display: flex;
 }
 
-body {
-	background-color: rgb(248, 237, 227);
-}
+// Navigation bar
 
-nav {
-	background-color: rgb(248, 237, 227);
-	border-bottom: 2px solid rgb(134, 112, 112);
-	color: rgb(134, 112, 112);
+.nav {
+	background-color: palette.$main-background-color;
+	border-bottom: 2px solid palette.$secondary-font-color;
+	color: palette.$secondary-font-color;
 	position: fixed;
 	height: 6vh;
-	width: 100%;
-	align-items: center;
 	z-index: 3;
-	display: flex;
-}
+	@include mixins.flex ($display: flex, $align-items:center, $width: 100%);
 
-.nav__list {
-	background-color: rgb(248, 237, 227);
-	display: flex;
-	justify-content: space-around;
-	text-align: end;
-	align-items: center;
-	width: 100%;
-}
+	&__list {
+		background-color: palette.$main-background-color;
+		justify-content: space-around;
+		text-align: end;
+		@include mixins.flex ($display: flex, $align-items:center, $width: 100%);
 
-.navbar__styling {
-	font-weight: 600;
-	color:rgb(133, 88, 111);
-}
-
-@include mobile {
-	.nav__list {
-		flex-direction: column;
-		height: 100vh;
-
-		&--hidden {
-			display: none;
+		&--link {
+			font-weight: 600;
+			color: palette.$main-font-color;
 		}
 	}
+}
 
-	nav {
-		align-items: flex-start;
+// Landing page
+
+.landingpage__container {
+	border: 1px solid palette.$secondary-background-color;
+	background-color: palette.$secondary-background-color;
+	justify-content: center;
+	flex-direction: column;
+	@include mixins.flex ($display: flex, $align-items:center, $width: 100%);
+		
+	&--title {
+		color: palette.$tertiary-font-color;
+		font-size: typography.$heading-desktop;
+		text-shadow: 0.8rem 0.8rem 0.8rem palette.$secondary-font-color;
 	}
 
-	.hamburger {
-		padding: 1rem;
-		position: absolute;
-    right: 0;
+	&--button {
+		border:2px solid palette.$main-background-color;
+		background-color: palette.$secondary-font-color;
+		color: palette.$tertiary-font-color;
+		padding: 0.8rem;
+		border-radius: 2rem;
+		margin-top: 3rem;
+
+		&:hover {
+			background-color: palette.$main-background-color;
+			border: 2px solid palette.$secondary-font-color;
+			color: palette.$secondary-font-color;
+		}
 	}
 }
 
-@include desktop {
-	.hamburger {
-		display: none;
-	}
-}
+// About me page 
 
 .about {
 	display: flex;
@@ -86,63 +84,60 @@ nav {
 
 	&__container {
 		height: 100%;
-		width: 80%;
-		display: flex;
 		justify-content: center;
-		align-items: center;
 		flex-direction: column;
+		@include mixins.flex ($display: flex, $align-items:center, $width: 80%);
 
 		&--img {
-			height: 80%;
-			width: 60%;
+			@include mixins.dimensions ($width: 60%, $height: 80%);
 			border-radius: 12%;
-			border: 4px solid rgb(213, 180, 180);
+			border: 4px solid palette.$secondary-background-color;
 		}	
 
 		&--header {
-			color: rgb(133, 88, 111);
-			text-shadow: 0.4rem 0.4rem 0.4rem rgb(213, 180, 180);
+			color: palette.$main-font-color;
+			text-shadow: 0.4rem 0.4rem 0.4rem palette.$secondary-background-color;
 			font-size: 3rem;
 		}
 
 		&--text {
-			color: rgb(134, 112, 112);
+			color: palette.$secondary-font-color;
 			text-align: center;
 			justify-content: center;
-			height: 60%;
-			width: 90%;
+			@include mixins.dimensions ($width: 90%, $height: 60%);
 		}
 	}
 }
 
-.landingpage__container {
-	border: 1px solid rgb(213, 180, 180);
-	background-color: rgb(213, 180, 180);
-	width: 100%;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-direction: column;
-		
-	&--title {
-		color:rgb(245, 235, 235);
-		font-size: 5rem;
-		text-shadow: 0.8rem 0.8rem 0.8rem rgb(134, 112, 112);
-	}
+// Media Queries
 
-	&--button {
-		border:2px solid rgb(248, 237, 227);
-		background-color:rgb(134, 112, 112);
-		color: white;
-		padding: 0.8rem;
-		border-radius: 2rem;
-		margin-top: 3rem;
+//Mobile 
 
-		&:hover {
-			background-color: rgb(248, 237, 227);
-			border: 2px solid rgb(134, 112, 112);
-			color: rgb(134, 112, 112);
+@include mixins.mobile {
+	.nav {
+		align-items: flex-start;
+
+		&__list {
+			flex-direction: column;
+			height: 100vh;
+
+			&--hidden {
+				display: none;
+			}
+		}
+
+		&__hamburger {
+			padding: 1rem;
+			position: absolute;
+			right: 0;
 		}
 	}
 }
 
+// Desktop
+
+@include mixins.desktop {
+	.nav__hamburger {
+		display: none;
+	}
+}

@@ -1,0 +1,27 @@
+@use "./breakpoints.scss";
+
+// Media queries
+@mixin mobile {
+	@media screen and (max-width: breakpoints.$md) {
+		@content
+	}
+};
+
+@mixin desktop {
+	@media screen and (min-width : (breakpoints.$md + 1px)) {
+		@content
+	}
+};
+
+// Display 
+
+@mixin flex($display, $align-items, $width) {
+	display: $display;
+	align-items: $align-items;
+	width: $width;
+}
+
+@mixin dimensions($width, $height) {
+	width: $width;
+	height: $height;
+}
