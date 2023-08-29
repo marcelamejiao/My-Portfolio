@@ -6,71 +6,47 @@
   list-style-type: none;
 }
 
+body {
+  background-color: rgb(248, 237, 227);
+}
+
 .page__section {
   min-height: 100vh;
   display: flex;
 }
 
-body {
-  background-color: rgb(248, 237, 227);
-}
-
-nav {
+.nav {
   background-color: rgb(248, 237, 227);
   border-bottom: 2px solid rgb(134, 112, 112);
   color: rgb(134, 112, 112);
   position: fixed;
   height: 6vh;
-  width: 100%;
-  align-items: center;
   z-index: 3;
   display: flex;
-}
-
-.nav__list {
-  background-color: rgb(248, 237, 227);
-  display: flex;
-  justify-content: space-around;
-  text-align: end;
   align-items: center;
   width: 100%;
 }
-
-.navbar__styling {
+.nav__list {
+  background-color: rgb(248, 237, 227);
+  justify-content: space-around;
+  text-align: end;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+.nav__list--link {
   font-weight: 600;
   color: rgb(133, 88, 111);
 }
 
-@media screen and (max-width: 768px) {
-  .nav__list {
-    flex-direction: column;
-    height: 100vh;
-  }
-  .nav__list--hidden {
-    display: none;
-  }
-  nav {
-    align-items: flex-start;
-  }
-  .hamburger {
-    padding: 1rem;
-    position: absolute;
-    right: 0;
-  }
-}
-@media screen and (min-width: 769px) {
-  .hamburger {
-    display: none;
-  }
-}
 .landingpage__container {
   border: 1px solid rgb(213, 180, 180);
   background-color: rgb(213, 180, 180);
-  width: 100%;
-  display: flex;
   justify-content: center;
-  align-items: center;
   flex-direction: column;
+  display: flex;
+  align-items: center;
+  width: 100%;
 }
 .landingpage__container--title {
   color: rgb(255, 255, 255);
@@ -97,15 +73,15 @@ nav {
 }
 .about__container {
   height: 100%;
-  width: 80%;
-  display: flex;
   justify-content: center;
-  align-items: center;
   flex-direction: column;
+  display: flex;
+  align-items: center;
+  width: 80%;
 }
 .about__container--img {
-  height: 80%;
   width: 60%;
+  height: 80%;
   border-radius: 12%;
   border: 4px solid rgb(213, 180, 180);
 }
@@ -118,6 +94,29 @@ nav {
   color: rgb(134, 112, 112);
   text-align: center;
   justify-content: center;
-  height: 60%;
   width: 90%;
+  height: 60%;
+}
+
+@media screen and (max-width: 768px) {
+  .nav {
+    align-items: flex-start;
+  }
+  .nav__list {
+    flex-direction: column;
+    height: 100vh;
+  }
+  .nav__list--hidden {
+    display: none;
+  }
+  .nav__hamburger {
+    padding: 1rem;
+    position: absolute;
+    right: 0;
+  }
+}
+@media screen and (min-width: 769px) {
+  .nav__hamburger {
+    display: none;
+  }
 }
