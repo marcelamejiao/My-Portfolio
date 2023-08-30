@@ -48,12 +48,14 @@ body {
 // Landing page
 
 .landingpage__container {
+	@include mixins.flex ($display: flex, $align-items:center, $width: 100%);
+	flex-direction: column;
+	justify-content: center;
 	border: 1px solid palette.$secondary-background-color;
 	background-color: palette.$secondary-background-color;
-	justify-content: center;
-	flex-direction: column;
-	@include mixins.flex ($display: flex, $align-items:center, $width: 100%);
-		
+	
+	
+			
 	&--title {
 		color: palette.$tertiary-font-color;
 		font-size: typography.$heading-desktop;
@@ -80,9 +82,9 @@ body {
 
 .about {
 	display: flex;
-	margin-top: 8rem;
-
+	
 	&__container {
+		margin-top: 10rem;
 		height: 100%;
 		justify-content: center;
 		flex-direction: column;
@@ -114,6 +116,23 @@ body {
 //Mobile 
 
 @include mixins.mobile {
+	.page__section {
+		flex-direction: column;
+	}
+
+	.landingpage__container {
+		height: 100vh;
+
+		&--title {
+			font-size: typography.$heading-mobile;
+		}
+	}
+
+	.about__container {
+    margin-top: 5rem;
+		width: 100%;
+	}
+	
 	.nav {
 		align-items: flex-start;
 
@@ -132,6 +151,8 @@ body {
 			right: 0;
 		}
 	}
+
+
 }
 
 // Desktop
