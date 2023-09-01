@@ -1,0 +1,61 @@
+@use '../partials/mixins';
+@use '../partials/palette.scss';
+@use '../partials/typography.scss';
+
+// Navigation bar
+
+.nav {
+	background-color: palette.$main-background-color;
+	border-bottom: 2px solid palette.$secondary-font-color;
+	color: palette.$secondary-font-color;
+	position: fixed;
+	height: 6vh;
+	z-index: 3;
+	@include mixins.container;
+
+	&__list {
+		background-color: palette.$main-background-color;
+		justify-content: space-around;
+		text-align: end;
+		@include mixins.container;
+
+		&--link {
+			font-weight: 600;
+			color: palette.$main-font-color;
+		}
+	}
+}
+
+// Media Queries
+
+//Mobile 
+
+@include mixins.mobile {
+	.nav {
+		align-items: flex-start;
+
+		&__list {
+			flex-direction: column;
+			height: 100vh;
+
+			&--hidden {
+				display: none;
+			}
+		}
+
+		&__hamburger {
+			color: palette.$main-font-color;
+			padding: 0.5rem;
+			position: absolute;
+			right: 0;
+		}
+	}
+}
+
+// Desktop
+
+@include mixins.desktop {
+	.nav__hamburger {
+		display: none;
+	}
+}
