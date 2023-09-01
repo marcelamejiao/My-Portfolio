@@ -1,0 +1,78 @@
+@use './partials/mixins.scss';
+@use './partials/palette.scss';
+@use './partials/typography.scss';
+@use './modules/navbar.scss';
+@use './modules/about.scss';
+@use './modules/skills.scss';
+@use './modules/projects.scss';
+@use './modules/footer.scss';
+
+// Whole app styles
+
+* {
+	font-family: typography.$main-font;
+	padding: 0;
+	margin: 0;
+	text-decoration: none;
+	list-style-type: none;
+}
+
+body {
+	background-color: palette.$main-background-color;
+}
+
+.page__section {
+	min-height: 100vh;
+	display: flex;
+	padding: 3vh 0 3vh 0;
+}
+
+// Landing page
+
+.landingpage__container {
+	@include mixins.container;
+	flex-direction: column;
+	justify-content: center;
+	border: 1px solid palette.$secondary-background-color;
+	background-color: palette.$main-font-color;
+
+	&--title {
+		color: palette.$tertiary-font-color;
+		font-size: typography.$heading-desktop;
+		text-shadow: 0.8rem 0.8rem 0.8rem palette.$secondary-font-color;
+	}
+
+	&--button {
+		border:2px solid palette.$tertiary-font-color;
+		background-color: palette.$main-background-color;
+		color: palette.$main-font-color;
+		padding: 0.8rem;
+		border-radius: 2rem;
+		margin-top: 3rem;
+
+		&:hover {
+			background-color: palette.$secondary-font-color;
+			border: 2px solid palette.$main-background-color;
+			color: palette.$tertiary-font-color;
+		}
+	}
+}
+
+// Media Queries  
+
+//Mobile 
+
+@include mixins.mobile {
+	.page__section {
+		flex-direction: column;
+	}
+
+	.landingpage__container {
+		height: 100vh;
+
+		&--title {
+			font-size: typography.$heading-mobile;
+		}
+	}
+}
+

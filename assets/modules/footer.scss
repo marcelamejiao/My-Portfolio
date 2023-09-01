@@ -1,0 +1,20 @@
+@use '../partials/mixins';
+@use '../partials/palette.scss';
+@use '../partials/typography.scss';
+
+.footer {
+	background-color: palette.$secondary-font-color;
+	height: 12vh;
+	display: flex;
+	align-items: center;
+	
+	&__container {
+		display: flex;
+		justify-content: space-around;
+		width: 100%;
+
+		&--link {
+			color: palette.$tertiary-font-color;
+		}
+	}
+}

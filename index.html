@@ -3,11 +3,12 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="./styles.css">
+	<link rel="stylesheet" href="assets/styles.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://kit.fontawesome.com/a3292c6ca0.js" crossorigin="anonymous"></script>
 	<title>Marcela Mejia Portfolio</title>
 </head>
 <body>
@@ -35,87 +36,110 @@
 
 		<section id="aboutMe" class="page__section about">
 			<div class="about__container">
-				<img class="about__container--img" src="./img/marcela-photo.jpg" alt="marcela-avatar">
+				<img class="about__container--img" src="./assets/img/marcela-photo.jpg" alt="marcela-avatar">
 			</div>
 			<div class="about__container">
 				<h2 class="about__container--header">ABOUT ME</h2>
 				<p class="about__container--text">
 					Hi! I am Marcela, welcome to my coding world!
-					Determined and productive Full Stack Web Developer 
+					Determined and productive entry level Full Stack Web Developer 
 					with a passion for creative solutions. 
 					I have strong organizational, math, planning and communication skills. 
-					Dedicated to learn additional technologies and coding languages. 
-					I have an excellent familiarity with Microsoft Office and Audio-Visual equipment. 
+					Dedicated to learn additional technologies and coding languages.  
 					Looking forward to learning more and expand my skills on Website and Mobile Apps design.
 				</p>
 			</div>
 		</section>
 
 		<section id="skills" class="page__section">
-			<h2>MY SKILLS</h2>
-			<h3>My proficiencies</h3>
-			<p>GitHub</p>
-			<dl>
-				<dt>Front-end</dt>
-				<dd>Sass/Scss</dd>
-				<dd>React.js</dd>
-				<dd>Cascading Style Sheets (CSS)</dd>
-				<dd>Bootstrap</dd>
-				<dd>JavaScript</dd>
-				<dd>jQuery</dd>
-				<dd>Moment.js</dd>
-				<dd>HTML5</dd>
-			</dl>
-			<dl>
-				<dt>Back-end</dt>
-				<dd>Express.js</dd>
-				<dd>MySQLs</dd>
-				<dd>Sequelize</dd>
-				<dd>Object-Oriented Programming (OOP)</dd>
-				<dd>MongoDB</dd>
-				<dd>Mongoose ODM</dd>
-				<dd>GraphQL</dd>
-				<dd>RESTful API</dd>
-			</dl>	
+			<div class="skills">
+				<h2 class="skills__header">MY SKILLS</h2>
+				<div class="skills__list">
+					<div class="skills__list--element">
+						<i class="fa-brands fa-github fa-2xl"></i>
+					</div>
+					<div class="skills__list--element">
+						<i class="fa-brands fa-sass fa-2xl"></i>
+					</div>
+					<div class="skills__list--element">
+						<i class="fa-brands fa-react fa-2xl"></i>
+					</div>
+					<div class="skills__list--element">
+						<i class="fa-brands fa-css3-alt fa-2xl"></i>
+					</div>
+					<div class="skills__list--element">
+						<i class="fa-brands fa-bootstrap fa-2xl"></i>
+					</div>
+					<div class="skills__list--element">
+						<i class="fa-brands fa-square-js fa-2xl"></i>
+					</div>
+					<div class="skills__list--element">
+						<i class="fa-brands fa-html5 fa-2xl"></i>
+					</div>
+					<div class="skills__list--element">MySQLs</div>
+					<div class="skills__list--element">Sequelize</div>
+					<div class="skills__list--element">MongoDB</div>
+					<div class="skills__list--element">Mongoose ODM</div>
+					<div class="skills__list--element">GraphQL</div>
+					<div class="skills__list--element">RESTful API</div>
+				</div>
+			</div>
 		</section>
 
 		<section id="projects" class="page__section">
-			<h2>PROJECTS</h2>
-			<div>
-				<h3>Project 1</h3>
-				<img src="" alt="">
-				<a href="">Live</a>
-				<a href="">Github</a>
+			<div class="projects">
+				<h2 class="projects__header">PROJECTS</h2>
+				<div class="projects__container">
+					<div class="card">
+						<h3 class="card__title">WHATSUPPLIER</h3>
+						<img class="card__image" src="./assets/img/WhatSupplierPage.png" alt="WhatSupplierPage">
+						<a class="card__link" href="https://whatsupplier.rubencito.net/">Live</a>
+						<a class="card__link" href="https://github.com/marcelamejiao/Whatsupplier">Github</a>
+					</div>
+					<div class="card">
+						<h3 class="card__title">PAWFECT MATCH</h3>
+						<img class="card__image" src="./assets/img/pawfect-match.png" alt="pawfect-match">
+						<a class="card__link" href="https://pawfect---match.herokuapp.com">Live</a>
+						<a class="card__link" href="https://marcelamejiao.github.io/React-Portfolio/#portfolio">Github</a>
+					</div>
+					<div class="card">
+						<h3 class="card__title">WEATHER DASHBOARD</h3>
+						<img class="card__image" src="./assets/img/weather-dashboard.png" alt="weather-dashboard">
+						<a class="card__link" href="https://marcelamejiao.github.io/Weather-Dashboard/">Live</a>
+						<a class="card__link" href="https://pawfect---match.herokuapp.com">Github</a>
+					</div>
+					<div class="card">
+						<h3 class="card__title">REACT PORTFOLIO</h3>
+						<img class="card__image" src="./assets/img/react-portfolio.png" alt="react-portfolio">
+						<a class="card__link" href="">Live</a>
+						<a class="card__link" href="https://marcelamejiao.github.io/React-Portfolio/#portfolio">Github</a>
+					</div>
+					<div class="card">
+						<h3 class="card__title">UMBRELLA</h3>
+						<img class="card__image"" src="./assets/img/umbrella-address-book.png" alt="umbrella-address-book">
+						<a class="card__link" href="https://marcelamejiao.github.io/Umbrella-Address-Book/">Live</a>
+						<a class="card__link" href="https://github.com/marcelamejiao/Umbrella-Address-Book">Github</a>
+					</div>
+					<div class="card">
+						<h3 class="card__title">TECH BLOG</h3>
+						<img class="card__image" src="./assets/img/tech-blog.png" alt="tech-blog">
+						<a class="card__link" href="https://el-tech-blog-mar.herokuapp.com">Live</a>
+						<a class="card__link" href="https://github.com/marcelamejiao/Tech-blog">Github</a>
+					</div>
+				</div>
 			</div>
-			<div>
-				<h3>Project 2</h3>
-				<img src="" alt="">
-				<a href="">Live</a>
-				<a href="">Github</a>
-			</div>
-			<div>
-				<h3>Project 3</h3>
-				<img src="" alt="">
-				<a href="">Live</a>
-				<a href="">Github</a>
-			</div>
-			<div>
-				<h3>Project 4</h3>
-				<img src="" alt="">
-				<a href="">Live</a>
-				<a href="">Github</a>
-			</div>
-		</section>
-		<section id="contactMe">
-			<h2>CONTACT ME</h2>
-				<p>Resume</p>
 		</section>
 	</main>
-<footer>
-	<a href="https://github.com/marcelamejiao" target="_blank" "> Github</a>
-            
-	<a href="" target="_blank" "> Linkedin</a>
+<footer class="footer" id="contactMe">
+	<div class="footer__container">
+		<a class="footer__container--link"href="https://github.com/marcelamejiao" target="_blank">
+			<i class="fa-brands fa-github fa-2xl"></i> Github
+		</a>        
+		<a class="footer__container--link" href="https://www.linkedin.com/in/wmarcelamejia" target="_blank" "> 
+			<i class="fa-brands fa-linkedin-in fa-2xl"></i> Linkedin
+		</a>
+	</div>
 </footer>
-<script src="./js/script.js" defer></script>
+<script src="./assets/js/script.js" defer></script>
 </body>
 </html>
