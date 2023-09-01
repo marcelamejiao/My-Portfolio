@@ -1,0 +1,69 @@
+@use '../partials/mixins';
+@use '../partials/palette.scss';
+@use '../partials/typography.scss';
+
+.projects {
+	width: 100%;
+	
+	&__header {
+		margin: 6vh 0 1rem 0;
+		@include mixins.headings;
+		text-align: center;
+	}
+
+	&__container {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-around;
+	}
+}
+
+.card {
+	width: 100%;
+	padding: 1rem;
+	border: 2px solid palette.$secondary-background-color;
+	margin: 1rem;
+	border-radius: 1.5rem;
+
+	&__image {
+		width: 100%;
+		object-fit: cover;
+		object-position: top;
+		max-height: 8rem;
+		border-radius: 1.5rem;
+	}
+
+	&__title {
+		margin-bottom: 1rem;
+		text-align: center;
+		color: palette.$main-font-color;
+	}
+
+	&__link {
+		color: palette.$main-font-color;
+		background-color: palette.$tertiary-font-color ;
+		font-weight: 700;
+
+		&:hover {
+			background-color: palette.$main-background-color;
+			border: 1.5px dashed palette.$secondary-font-color;
+			color: palette.$secondary-font-color;
+		}
+	}
+}
+
+// Desktop
+
+@include mixins.desktop {
+	.projects {
+
+		&__header {
+			@include mixins.headingsDesktop;
+		}
+	}
+
+	.card {
+		width: 29%;
+		margin: 0.5rem;
+	}
+}
