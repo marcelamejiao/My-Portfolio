@@ -2,6 +2,8 @@
 @use './partials/palette.scss';
 @use './partials/typography.scss';
 @use './modules/navbar.scss';
+@use './modules/about.scss';
+@use './modules/skills.scss';
 
 // Whole app styles
 
@@ -20,6 +22,7 @@ body {
 .page__section {
 	min-height: 100vh;
 	display: flex;
+	padding: 3vh 0 3vh 0;
 }
 
 // Landing page
@@ -53,50 +56,8 @@ body {
 	}
 }
 
-// About me page 
 
-.about {
-	// display: flex;
-	
-	&__container {
-		margin-top: 10rem;
-		height: 100%;
-		justify-content: center;
-		flex-direction: column;
-		@include mixins.container;
 
-		&--img {
-			@include mixins.dimensions ($width: 60%, $height: 80%);
-			border-radius: 12%;
-			border: 4px solid palette.$secondary-background-color;
-		}	
-
-		&--header {
-			@include mixins.headings
-		}
-
-		&--text {
-			color: palette.$secondary-font-color;
-			text-align: center;
-			justify-content: center;
-			@include mixins.dimensions ($width: 90%, $height: 60%);
-		}
-	}
-}
-
-// Skills section
-
-.skills__container {
-	@include mixins.container;
-	height: 100%;
-	margin-top: 7rem;
-	flex-direction: column;
-
-	&--header {
-		@include mixins.headings;
-		margin-bottom: 8rem;
-	}
-} 
  
 // Media Queries  
 
@@ -116,13 +77,3 @@ body {
 	}
 }
 
-// Desktop
-
-@include mixins.desktop {
-
-	.skills__container--list{
-		display: flex;
-		justify-content: space-evenly;
-    width: 100%; 
-	}
-}

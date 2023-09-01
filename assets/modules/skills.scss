@@ -1,0 +1,54 @@
+@use '../partials/mixins';
+@use '../partials/palette.scss';
+@use '../partials/typography.scss';
+
+// Skills section
+
+.skills {
+	width: 100%;
+	
+	&__header {
+		margin: 6vh 0 1rem 0;
+		@include mixins.headings;
+		text-align: center;
+	}
+
+	&__list {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-around;
+		
+
+		&--element {
+			width: 33%;
+			text-align: center;
+			padding: 1rem 0 1rem 0;
+		}
+	}
+
+} 
+
+
+
+
+
+// Desktop
+
+@include mixins.desktop {
+	.skills {
+
+		&__header {
+			@include mixins.headingsDesktop;
+		}
+
+		&__list {
+			
+			&--element {
+				font-size: typography.$text-desktop;
+				padding: 2rem 0 2rem 0;
+			}
+		}
+	}
+
+
+}

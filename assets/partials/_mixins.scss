@@ -28,14 +28,17 @@
 	height: $height;
 }
 
-@mixin headings {
-	color: palette.$main-font-color;
-	text-shadow: 0.4rem 0.4rem 0.4rem palette.$secondary-background-color;
-	font-size: typography.$heading-mobile;
-}
 
-@mixin content {
-	color: palette.$main-font-color;
-	text-shadow: 0.4rem 0.4rem 0.4rem palette.$secondary-background-color;
-	font-size: typography.$heading-mobile; //TODO
-}
+//Mobile screens
+
+	@mixin headings {
+		color: palette.$main-font-color;
+		text-shadow: 0.4rem 0.4rem 0.4rem palette.$secondary-background-color;
+		font-size: typography.$heading-mobile;
+	}
+
+	@mixin headingsDesktop {
+		color: palette.$main-font-color;
+		text-shadow: 0.4rem 0.4rem 0.4rem palette.$secondary-background-color;
+		font-size: typography.$heading-desktop;
+	}
