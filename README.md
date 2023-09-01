@@ -35,7 +35,7 @@ This is the selected [colour palette.](https://colorhunt.co/palette/867070d5b4b4
 
 ## **Preview**
  
- <img src=''>
+![Project Page](assets/img/portfolio-landing-page.png)
 
 
 ## **Deployed link**
