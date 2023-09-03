@@ -5,8 +5,6 @@
 // About me page 
 
 .about {
-	// display: flex;
-	
 	&__container {
 		margin-top: 3rem;
 		height: 100%;
@@ -21,7 +19,7 @@
 		}	
 
 		&--header {
-			@include mixins.headings
+			@include mixins.headings;
 		}
 
 		&--text {
@@ -36,9 +34,7 @@
 // Desktop
 
 @include mixins.desktop {
-	.about {
-		// display: flex;
-		
+	.about {		
 		&__container {
 			margin-top: 6vh;
 
@@ -50,8 +46,5 @@
 				font-size:typography.$text-desktop;
 			}
 		}
-
-
-
 	}
 }

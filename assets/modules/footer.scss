@@ -1,6 +1,4 @@
-@use '../partials/mixins';
 @use '../partials/palette.scss';
-@use '../partials/typography.scss';
 
 .footer {
 	background-color: palette.$secondary-font-color;

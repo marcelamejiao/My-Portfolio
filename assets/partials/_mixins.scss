@@ -4,16 +4,16 @@
 
 // Media queries
 @mixin mobile {
-	@media screen and (max-width: breakpoints.$md) {
-		@content
+	@media only screen and (max-width: breakpoints.$md) {
+		@content;
 	}
-};
+}
 
 @mixin desktop {
-	@media screen and (min-width : (breakpoints.$md + 1px)) {
-		@content
+	@media only screen and (min-width : (breakpoints.$md + 1px)) {
+		@content;
 	}
-};
+}
 
 // Display 
 
@@ -29,16 +29,16 @@
 }
 
 
-//Mobile screens
+// Mobile screens
 
-	@mixin headings {
-		color: palette.$main-font-color;
-		text-shadow: 0.4rem 0.4rem 0.4rem palette.$secondary-background-color;
-		font-size: typography.$heading-mobile;
-	}
+@mixin headings {
+	color: palette.$main-font-color;
+	text-shadow: 0.4rem 0.4rem 0.4rem palette.$secondary-background-color;
+	font-size: typography.$heading-mobile;
+}
 
-	@mixin headingsDesktop {
-		color: palette.$main-font-color;
-		text-shadow: 0.4rem 0.4rem 0.4rem palette.$secondary-background-color;
-		font-size: typography.$heading-desktop;
-	}
+@mixin headingsDesktop {
+	color: palette.$main-font-color;
+	text-shadow: 0.4rem 0.4rem 0.4rem palette.$secondary-background-color;
+	font-size: typography.$heading-desktop;
+}

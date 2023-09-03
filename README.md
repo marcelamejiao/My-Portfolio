@@ -21,7 +21,7 @@ This is the selected [colour palette.](https://colorhunt.co/palette/867070d5b4b4
 ### **User Story:**
   AS A Web Developer,
 
-  I WANT to create my professional Portfolio implementing the technologies I know ,
+  I WANT to create my professional Portfolio implementing the technologies I know,
 
   SO THAT I can effectively show the projects that I worked on and recruiters can contact me.
 
@@ -31,7 +31,6 @@ This is the selected [colour palette.](https://colorhunt.co/palette/867070d5b4b4
 * HTML
 * Sass/Scss
 * CSS
-* Bootstrap
 
 ## **Preview**
  

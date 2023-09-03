@@ -1,5 +1,4 @@
 @use '../partials/mixins';
-@use '../partials/palette.scss';
 @use '../partials/typography.scss';
 
 // Skills section
@@ -27,10 +26,6 @@
 	}
 } 
 
-
-
-
-
 // Desktop
 
 @include mixins.desktop {
@@ -41,7 +36,6 @@
 		}
 
 		&__list {
-			
 			&--element {
 				font-size: typography.$text-desktop;
 				padding: 2rem 0 2rem 0;
