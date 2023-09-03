@@ -56,7 +56,6 @@
 
 @include mixins.desktop {
 	.projects {
-
 		&__header {
 			@include mixins.headingsDesktop;
 		}
