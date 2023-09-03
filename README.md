@@ -39,7 +39,7 @@ This is the selected [colour palette.](https://colorhunt.co/palette/867070d5b4b4
 
 ## **Deployed link**
 
-💡 Live version: [click here!]()
+💡 Live version: [click here!](https://marcelamejiao.github.io/Portfolio-Scss/)
 
 ## **Future Development**
 
