@@ -44,16 +44,17 @@ body {
 
 	&--button {
 		border:2px solid palette.$tertiary-font-color;
-		background-color: palette.$main-background-color;
-		color: palette.$main-font-color;
+		background-color: palette.$details-color;
+		color: palette.$tertiary-font-color;
 		padding: 0.8rem;
 		border-radius: 2rem;
 		margin-top: 3rem;
+		box-shadow: 0.1rem 0.1rem 0.3rem 0 palette.$box-shadow-light;
 
 		&:hover {
-			background-color: palette.$secondary-font-color;
+			background-color: palette.$main-background-color;
 			border: 2px solid palette.$main-background-color;
-			color: palette.$tertiary-font-color;
+			color: palette.$main-font-color;
 		}
 	}
 }

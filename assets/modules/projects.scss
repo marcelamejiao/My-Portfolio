@@ -21,9 +21,22 @@
 .card {
 	width: 100%;
 	padding: 1rem;
-	border: 2px solid palette.$secondary-background-color;
 	margin: 1rem;
 	border-radius: 1.5rem;
+	box-shadow: 0.1rem 0.1rem 0.5rem 0 palette.$secondary-font-color;
+	opacity: 0.9;
+	background-color: palette.$background-transparency;
+
+	&:hover {
+		box-shadow: 0.2rem 0.2rem 1rem 0 palette.$secondary-font-color;
+		border: none;
+		border-left: 0.3rem solid palette.$details-color;
+		border-right: 0.3rem solid palette.$details-color;
+		transform: translateY(-5px);
+		opacity: 1;
+		transition: all 0.25s ease-in;
+
+	}
 
 	&__image {
 		width: 100%;
@@ -37,15 +50,21 @@
 		margin-bottom: 1rem;
 		text-align: center;
 		color: palette.$main-font-color;
+		border-bottom: 0.1rem solid palette.$secondary-background-color;
 	}
 
 	&__link {
 		color: palette.$main-font-color;
-		background-color: palette.$tertiary-font-color ;
+		background-color: palette.$background-transparency;
+		color: palette.$details-color;
+		box-shadow: 0.1rem 0.1rem 0.1rem 0 palette.$secondary-font-color;
+		border-radius: 0.2rem;
+		padding: 0.1rem;
 		font-weight: 700;
 
 		&:hover {
-			background-color: palette.$main-background-color;
+			background-color: palette.$tertiary-font-color;
+
 			border: 1.5px dashed palette.$secondary-font-color;
 			color: palette.$secondary-font-color;
 		}

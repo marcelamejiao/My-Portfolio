@@ -6,6 +6,7 @@
 
 .about {
 	&__container {
+		gap: 1rem;
 		margin-top: 3rem;
 		height: 100%;
 		justify-content: center;
@@ -14,8 +15,15 @@
 
 		&--img {
 			@include mixins.dimensions ($width: 60%, $height: 80%);
-			border-radius: 12%;
-			border: 4px solid palette.$secondary-background-color;
+			border-radius: 15rem;
+			border-left: 0.4rem solid palette.$details-color;
+			border-right: 0.4rem solid palette.$details-color;
+			opacity: 0.9;
+			box-shadow: 0.1rem 0.1rem 0.5rem 0 palette.$secondary-font-color;
+			
+			&:hover {
+				box-shadow: 0.1rem 0.1rem 0.5rem 0 palette.$secondary-font-color;
+			}
 		}	
 
 		&--header {
@@ -26,7 +34,18 @@
 			color: palette.$secondary-font-color;
 			text-align: center;
 			justify-content: center;
+			padding: 1rem 3rem 1rem 3rem;
+			border-radius: 0.3rem;
+			background-color: palette.$background-transparency;
+			opacity: 0.9;
+			box-shadow: 0.2rem 0.2rem 1rem 0 palette.$box-shadow-dark;
 			@include mixins.dimensions ($width: 90%, $height: 60%);
+
+			&:hover {
+				box-shadow: 0.1rem 0.1rem 0.5rem 0 palette.$secondary-font-color;
+				opacity: 1;
+			}
+
 		}
 	}
 }
@@ -44,6 +63,7 @@
 
 			&--text {
 				font-size:typography.$text-desktop;
+				padding: 3rem 1rem 3rem 1rem;
 			}
 		}
 	}

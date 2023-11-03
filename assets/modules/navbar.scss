@@ -5,7 +5,8 @@
 
 .nav {
 	background-color: palette.$main-background-color;
-	border-bottom: 2px solid palette.$secondary-font-color;
+	border-bottom: 2px solid palette.$details-color;
+	box-shadow: 0.1rem 0.1rem 0.5rem 0 palette.$secondary-font-color;
 	color: palette.$secondary-font-color;
 	position: fixed;
 	height: 6vh;
@@ -21,6 +22,13 @@
 		&--link {
 			font-weight: 600;
 			color: palette.$main-font-color;
+			opacity: 0.9;
+
+			&:hover {
+				border-left: 0.1rem solid palette.$secondary-background-color;
+				border-right: 0.1rem solid palette.$secondary-background-color;
+				opacity: 1;
+			}
 		}
 	}
 }
