@@ -9,6 +9,12 @@
 	}
 }
 
+@mixin tablet {
+	@media only screen and (min-width: (breakpoints.$sm + 1px)) and (max-width: breakpoints.$md) {
+		@content;
+	}
+}
+
 @mixin desktop {
 	@media only screen and (min-width : (breakpoints.$md + 1px)) {
 		@content;

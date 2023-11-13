@@ -50,6 +50,18 @@
 	}
 }
 
+//tablet
+
+@include mixins.tablet {
+	.about {
+		&__container {
+			&--text {
+				padding: 1rem 1rem 1rem 1rem;
+			}
+		}
+	}
+}
+
 // Desktop
 
 @include mixins.desktop {
