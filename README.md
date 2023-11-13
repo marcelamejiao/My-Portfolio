@@ -48,7 +48,7 @@ For this project I decided to choose my favourite colours, to make it more perso
 ## **Future Development**
 
 * Include future projects. 
-* Update my portfolio with new fuatures using JavaScript and Java.
+* Update my portfolio with new features using JavaScript.
 
 
 ## **Questions**
