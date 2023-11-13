@@ -34,7 +34,11 @@ For this project I decided to choose my favourite colours, to make it more perso
 
 ## **Preview**
  
-![Project Page](assets/img/portfolio-landing-page.png)
+* **Landing Page**
+![Landing Page](assets/img/portfolio-landing-page.png)
+
+* **Projects Page**
+![Projects Page](assets/img/portfolio-projects-section.png)
 
 
 ## **Deployed link**
