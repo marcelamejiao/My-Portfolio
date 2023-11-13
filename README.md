@@ -39,7 +39,7 @@ For this project I decided to choose my favourite colours, to make it more perso
 
 ## **Deployed link**
 
-💡 Live version: [click here! to be deployed]() 
+💡 Live version: [click here!](https://marcelamejiao.github.io/Portfolio-Scss/) 
 
 ## **Future Development**
 
