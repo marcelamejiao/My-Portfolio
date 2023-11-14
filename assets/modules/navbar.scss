@@ -40,6 +40,7 @@
 @include mixins.mobile {
 	.nav {
 		align-items: flex-start;
+		align-items: center;
 
 		&__list {
 			flex-direction: column;
