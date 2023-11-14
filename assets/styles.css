@@ -364,6 +364,7 @@ body {
   .landingpage__container--title {
     font-size: 3rem;
     word-break: break-word;
+    padding: 0 0.5rem 0 0.5rem;
   }
   .landingpage__container--title:hover {
     transform: scale(1.1);
