@@ -80,6 +80,7 @@
   font-size: 3rem;
   letter-spacing: 0.1em;
   border-top: 0.1rem solid rgba(255, 255, 255, 0.4901960784);
+  text-align: center;
 }
 .about__container--text {
   color: rgb(134, 112, 112);
@@ -155,6 +156,7 @@
     font-size: 4.5rem;
     letter-spacing: 0.1em;
     border-top: 0.1rem solid rgba(255, 255, 255, 0.4901960784);
+    text-align: center;
   }
   .skills__list--element {
     width: 30%;
@@ -233,6 +235,7 @@
     font-size: 4.5rem;
     letter-spacing: 0.1em;
     border-top: 0.1rem solid rgba(255, 255, 255, 0.4901960784);
+    text-align: center;
   }
   .card {
     width: 29%;
