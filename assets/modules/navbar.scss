@@ -40,7 +40,6 @@
 @include mixins.mobile {
 	.nav {
 		align-items: flex-start;
-		align-items: center;
 
 		&__list {
 			flex-direction: column;
@@ -52,12 +51,12 @@
 		}
 
 		&__hamburger {
+			align-items: center;
 			font-size: 2rem;
 			color: palette.$main-font-color;
 			padding: 1rem;
 			position: absolute;
 			right: 0;
-
 
 			&:active {
 				transform: scale(1.1);
