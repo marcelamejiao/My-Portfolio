@@ -43,7 +43,8 @@
 	font-size: typography.$heading-mobile;
 	letter-spacing: 0.1em;
 	border-top: 0.1rem solid palette.$background-transparency;
-	text-align: center
+	text-align: center;
+	word-break: break-word;
 }
 
 @mixin headingsDesktop {

@@ -23,6 +23,8 @@
 			
 			&:hover {
 				box-shadow: 0.1rem 0.1rem 0.5rem 0 palette.$secondary-font-color;
+				transform: rotate3d(0, 0, 1, 360deg);
+				transition: all 1s ease-in;
 			}
 		}	
 
@@ -37,13 +39,11 @@
 			padding: 1rem 1rem 1rem 1rem;
 			border-radius: 0.3rem;
 			background-color: palette.$background-transparency;
-			opacity: 0.9;
 			box-shadow: 0.2rem 0.2rem 1rem 0 palette.$box-shadow-dark;
 			@include mixins.dimensions ($width: 90%, $height: 60%);
 
 			&:hover {
 				box-shadow: 0.1rem 0.1rem 0.5rem 0 palette.$secondary-font-color;
-				opacity: 1;
 			}
 
 		}
@@ -76,6 +76,11 @@
 			&--text {
 				font-size:typography.$text-desktop;
 				padding: 3rem 1rem 3rem 1rem;
+
+				&:hover {
+					transform: translateY(-30px);
+					transition: all 1s ease-in;
+				}
 			}
 		}
 	}

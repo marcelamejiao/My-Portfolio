@@ -41,6 +41,12 @@ body {
 		color: palette.$tertiary-font-color;
 		font-size: typography.$heading-desktop;
 		text-shadow: 0.8rem 0.8rem 0.8rem palette.$secondary-font-color;
+
+		&:hover {
+			transform: scale(1.2);
+			transform-origin: center;
+			transition: all 1s ease-in;
+		}
 	}
 
 	&--button {
@@ -56,6 +62,9 @@ body {
 			background-color: palette.$main-background-color;
 			border: 2px solid palette.$main-background-color;
 			color: palette.$main-font-color;
+			transform: scale(1.1);
+			transform-origin: center;
+			transition: all 0.30s ease-in;
 		}
 	}
 }
@@ -74,6 +83,7 @@ body {
 
 		&--title {
 			font-size: typography.$heading-mobile;
+			word-break: break-word;
 		}
 	}
 }
