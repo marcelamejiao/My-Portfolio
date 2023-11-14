@@ -42,10 +42,13 @@
 	text-shadow: 0.4rem 0.4rem 0.4rem palette.$secondary-background-color;
 	font-size: typography.$heading-mobile;
 	letter-spacing: 0.1em;
+	border-top: 0.1rem solid palette.$background-transparency;
 }
 
 @mixin headingsDesktop {
 	color: palette.$main-font-color;
 	text-shadow: 0.4rem 0.4rem 0.4rem palette.$secondary-background-color;
 	font-size: typography.$heading-desktop;
+	letter-spacing: 0.1em;
+	border-top: 0.1rem solid palette.$background-transparency;
 }

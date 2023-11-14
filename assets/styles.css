@@ -79,6 +79,7 @@
   text-shadow: 0.4rem 0.4rem 0.4rem rgb(213, 180, 180);
   font-size: 3rem;
   letter-spacing: 0.1em;
+  border-top: 0.1rem solid rgba(255, 255, 255, 0.4901960784);
 }
 .about__container--text {
   color: rgb(134, 112, 112);
@@ -123,6 +124,7 @@
   text-shadow: 0.4rem 0.4rem 0.4rem rgb(213, 180, 180);
   font-size: 3rem;
   letter-spacing: 0.1em;
+  border-top: 0.1rem solid rgba(255, 255, 255, 0.4901960784);
   text-align: center;
 }
 .skills__list {
@@ -151,6 +153,8 @@
     color: rgb(133, 88, 111);
     text-shadow: 0.4rem 0.4rem 0.4rem rgb(213, 180, 180);
     font-size: 4.5rem;
+    letter-spacing: 0.1em;
+    border-top: 0.1rem solid rgba(255, 255, 255, 0.4901960784);
   }
   .skills__list--element {
     width: 30%;
@@ -167,6 +171,7 @@
   text-shadow: 0.4rem 0.4rem 0.4rem rgb(213, 180, 180);
   font-size: 3rem;
   letter-spacing: 0.1em;
+  border-top: 0.1rem solid rgba(255, 255, 255, 0.4901960784);
   text-align: center;
 }
 .projects__container {
@@ -226,6 +231,8 @@
     color: rgb(133, 88, 111);
     text-shadow: 0.4rem 0.4rem 0.4rem rgb(213, 180, 180);
     font-size: 4.5rem;
+    letter-spacing: 0.1em;
+    border-top: 0.1rem solid rgba(255, 255, 255, 0.4901960784);
   }
   .card {
     width: 29%;
