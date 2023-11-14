@@ -129,9 +129,18 @@
   justify-content: space-around;
 }
 .skills__list--element {
-  width: 33%;
+  width: 50%;
   text-align: center;
-  padding: 1rem 0 1rem 0;
+  padding: 2rem 0rem 2rem 0rem;
+  margin: 0.5rem;
+  border-bottom: 0.1rem solid rgb(125, 160, 140);
+}
+.skills__list--element:hover {
+  box-shadow: 0.2rem 0.2rem 0.5rem 0 rgb(125, 160, 140);
+  border: none;
+  border-radius: 1rem 0 1rem 0;
+  transform: translateY(-5px);
+  transition: all 0.25s ease-in;
 }
 
 @media only screen and (min-width: 769px) {
@@ -141,6 +150,7 @@
     font-size: 4.5rem;
   }
   .skills__list--element {
+    width: 30%;
     font-size: 1.3rem;
     padding: 2rem 0 2rem 0;
   }
