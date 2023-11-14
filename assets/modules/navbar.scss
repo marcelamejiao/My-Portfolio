@@ -22,12 +22,10 @@
 		&--link {
 			font-weight: 600;
 			color: palette.$main-font-color;
-			opacity: 0.9;
 
 			&:hover {
 				border-left: 0.1rem solid palette.$secondary-background-color;
 				border-right: 0.1rem solid palette.$secondary-background-color;
-				opacity: 1;
 			}
 		}
 	}
