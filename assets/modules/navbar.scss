@@ -9,9 +9,10 @@
 	box-shadow: 0.1rem 0.1rem 0.5rem 0 palette.$secondary-font-color;
 	color: palette.$secondary-font-color;
 	position: fixed;
-	height: 6vh;
+	height: 8vh;
 	z-index: 3;
 	@include mixins.container;
+
 
 	&__list {
 		background-color: palette.$main-background-color;
@@ -20,8 +21,9 @@
 		@include mixins.container;
 
 		&--link {
+			letter-spacing: 0.1em;
 			font-weight: 600;
-			color: palette.$main-font-color;
+			color: palette.$black;
 
 			&:hover {
 				border-left: 0.1rem solid palette.$secondary-background-color;
@@ -49,8 +51,9 @@
 		}
 
 		&__hamburger {
+			font-size: x-large;
 			color: palette.$main-font-color;
-			padding: 0.7rem;
+			padding: 1rem;
 			position: absolute;
 			right: 0;
 		}
