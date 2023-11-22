@@ -41,6 +41,15 @@ body {
 		color: palette.$tertiary-font-color;
 		font-size: typography.$heading-desktop;
 		text-shadow: 0.8rem 0.8rem 0.8rem palette.$secondary-font-color;
+		overflow: hidden; 
+		white-space: nowrap;
+		margin: 0 auto;
+		animation: typing 3s steps(60, end);
+
+		@keyframes typing {
+			from { width: 0 }
+			to { width: 100% }
+		}
 
 		&:hover {
 			transform: scale(1.2);
@@ -80,11 +89,11 @@ body {
 
 	.landingpage__container {
 		height: 100vh;
-
+		
 		&--title {
 			font-size: typography.$heading-mobile;
-			word-break: break-word;
 			padding: 0 0.5rem 0 0.5rem;
+			white-space: break-spaces;
 
 			&:hover {
 				transform: scale(1.1);

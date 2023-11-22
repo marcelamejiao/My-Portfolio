@@ -1,5 +1,5 @@
 .nav {
-  background-color: rgb(248, 237, 227);
+  background-color: rgb(251, 246, 242);
   border-bottom: 2px solid rgb(125, 160, 140);
   box-shadow: 0.1rem 0.1rem 0.5rem 0 rgb(134, 112, 112);
   color: rgb(134, 112, 112);
@@ -11,7 +11,7 @@
   width: 100%;
 }
 .nav__list {
-  background-color: rgb(248, 237, 227);
+  background-color: rgb(251, 246, 242);
   justify-content: space-around;
   text-align: end;
   display: flex;
@@ -308,7 +308,7 @@
 }
 
 body {
-  background-color: rgb(248, 237, 227);
+  background-color: rgb(251, 246, 242);
 }
 
 .page__section {
@@ -331,6 +331,18 @@ body {
   color: rgb(255, 255, 255);
   font-size: 4.5rem;
   text-shadow: 0.8rem 0.8rem 0.8rem rgb(134, 112, 112);
+  overflow: hidden;
+  white-space: nowrap;
+  margin: 0 auto;
+  animation: typing 3s steps(60, end);
+}
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
 }
 .landingpage__container--title:hover {
   transform: scale(1.2);
@@ -347,8 +359,8 @@ body {
   box-shadow: 0.1rem 0.1rem 0.3rem 0 rgba(0, 0, 0, 0.554);
 }
 .landingpage__container--button:hover {
-  background-color: rgb(248, 237, 227);
-  border: 2px solid rgb(248, 237, 227);
+  background-color: rgb(251, 246, 242);
+  border: 2px solid rgb(251, 246, 242);
   color: rgb(133, 88, 111);
   transform: scale(1.1);
   transform-origin: center;
@@ -364,8 +376,8 @@ body {
   }
   .landingpage__container--title {
     font-size: 3rem;
-    word-break: break-word;
     padding: 0 0.5rem 0 0.5rem;
+    white-space: break-spaces;
   }
   .landingpage__container--title:hover {
     transform: scale(1.1);

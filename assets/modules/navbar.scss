@@ -12,8 +12,7 @@
 	height: 8vh;
 	z-index: 3;
 	@include mixins.container;
-
-
+	
 	&__list {
 		background-color: palette.$main-background-color;
 		justify-content: space-around;
@@ -24,7 +23,7 @@
 			letter-spacing: 0.1em;
 			font-weight: 600;
 			color: palette.$black;
-
+			
 			&:hover {
 				border-left: 0.1rem solid palette.$secondary-background-color;
 				border-right: 0.1rem solid palette.$secondary-background-color;

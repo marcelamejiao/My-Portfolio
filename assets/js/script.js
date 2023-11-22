@@ -13,3 +13,6 @@ document.querySelectorAll(".nav__list--link").forEach(function (linkElement) {
     navList.classList.add('nav__list--hidden');
   })
 });
+
+
+
