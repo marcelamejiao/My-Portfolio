@@ -42,7 +42,7 @@
 	text-shadow: 0.4rem 0.4rem 0.4rem palette.$secondary-background-color;
 	font-size: typography.$heading-mobile;
 	letter-spacing: 0.1em;
-	border-top: 0.1rem solid palette.$background-transparency;
+	border-top: 0.1rem solid palette.$tertiary-font-color;
 	text-align: center;
 	word-break: break-word;
 }
@@ -51,7 +51,7 @@
 	color: palette.$main-font-color;
 	text-shadow: 0.4rem 0.4rem 0.4rem palette.$secondary-background-color;
 	font-size: typography.$heading-desktop;
-	letter-spacing: 0.1em;
-	border-top: 0.1rem solid palette.$background-transparency;
-	text-align: center
+	letter-spacing: 0.2em;
+	border-top: 0.1rem solid palette.$tertiary-font-color;
+	text-align: center;
 }

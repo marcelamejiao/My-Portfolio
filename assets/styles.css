@@ -88,7 +88,7 @@
   text-shadow: 0.4rem 0.4rem 0.4rem rgb(213, 180, 180);
   font-size: 3rem;
   letter-spacing: 0.1em;
-  border-top: 0.1rem solid rgba(255, 255, 255, 0.4901960784);
+  border-top: 0.1rem solid rgb(255, 255, 255);
   text-align: center;
   word-break: break-word;
 }
@@ -137,7 +137,7 @@
   text-shadow: 0.4rem 0.4rem 0.4rem rgb(213, 180, 180);
   font-size: 3rem;
   letter-spacing: 0.1em;
-  border-top: 0.1rem solid rgba(255, 255, 255, 0.4901960784);
+  border-top: 0.1rem solid rgb(255, 255, 255);
   text-align: center;
   word-break: break-word;
 }
@@ -169,12 +169,12 @@
     color: rgb(133, 88, 111);
     text-shadow: 0.4rem 0.4rem 0.4rem rgb(213, 180, 180);
     font-size: 4.5rem;
-    letter-spacing: 0.1em;
-    border-top: 0.1rem solid rgba(255, 255, 255, 0.4901960784);
+    letter-spacing: 0.2em;
+    border-top: 0.1rem solid rgb(255, 255, 255);
     text-align: center;
   }
   .skills__list--element {
-    width: 30%;
+    width: 20%;
     font-size: 1.3rem;
     padding: 2rem 0 2rem 0;
   }
@@ -188,7 +188,7 @@
   text-shadow: 0.4rem 0.4rem 0.4rem rgb(213, 180, 180);
   font-size: 3rem;
   letter-spacing: 0.1em;
-  border-top: 0.1rem solid rgba(255, 255, 255, 0.4901960784);
+  border-top: 0.1rem solid rgb(255, 255, 255);
   text-align: center;
   word-break: break-word;
 }
@@ -251,12 +251,12 @@
     color: rgb(133, 88, 111);
     text-shadow: 0.4rem 0.4rem 0.4rem rgb(213, 180, 180);
     font-size: 4.5rem;
-    letter-spacing: 0.1em;
-    border-top: 0.1rem solid rgba(255, 255, 255, 0.4901960784);
+    letter-spacing: 0.2em;
+    border-top: 0.1rem solid rgb(255, 255, 255);
     text-align: center;
   }
   .card {
-    width: 29%;
+    width: 40%;
     margin: 0.5rem;
   }
 }
@@ -264,6 +264,7 @@
   background-color: rgb(134, 112, 112);
   height: 50vh;
   display: flex;
+  border-top: 0.1rem solid rgb(255, 255, 255);
 }
 .footer__container {
   display: flex;

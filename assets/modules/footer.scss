@@ -5,6 +5,7 @@
 	background-color: palette.$secondary-font-color;
 	height: 50vh;
 	display: flex;
+	border-top: 0.1rem solid palette.$tertiary-font-color;
 	
 	&__container {
 		display: flex;
