@@ -43,6 +43,11 @@
 
 			&--text {
 				font-size: 4.5rem;
+
+				&:hover {
+					transform: rotate3d(0, 0, 1, -360deg);
+					transition: all 1s ease-in;
+				}
 			}
 
 			&--link {

@@ -21,10 +21,10 @@
 	width: 100%;
 	padding: 1rem;
 	margin: 1rem;
-	border-radius: 1.5rem;
-	box-shadow: 0.1rem 0.1rem 0.5rem 0 palette.$secondary-font-color;
+	border-radius: 1rem;
+	box-shadow: 0.1rem 0.1rem 0.1rem 0 palette.$secondary-font-color;
 	opacity: 0.9;
-	background-color: palette.$background-transparency;
+	background-color: palette.$tertiary-font-color;
 	
 
 	&:hover {
@@ -82,6 +82,6 @@
 
 	.card {
 		width: 40%;
-		margin: 0.5rem;
+		margin: 1rem;
 	}
 }

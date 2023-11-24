@@ -19,7 +19,7 @@
 			border-left: 0.4rem solid palette.$details-color;
 			border-right: 0.4rem solid palette.$details-color;
 			opacity: 0.9;
-			box-shadow: 0.1rem 0.1rem 0.5rem 0 palette.$secondary-font-color;
+			box-shadow: 0.1rem 0.1rem 0.3rem 0 palette.$secondary-font-color;
 			
 			&:hover {
 				box-shadow: 0.1rem 0.1rem 0.5rem 0 palette.$secondary-font-color;
@@ -37,13 +37,14 @@
 			text-align: center;
 			justify-content: center;
 			padding: 1rem 1rem 1rem 1rem;
-			border-radius: 0.3rem;
-			background-color: palette.$background-transparency;
-			box-shadow: 0.2rem 0.2rem 1rem 0 palette.$box-shadow-dark;
-			@include mixins.dimensions ($width: 90%, $height: 60%);
+			border-radius: 2.5rem 0 2.5rem 0;
+			background-color: palette.$tertiary-font-color;
+			box-shadow: 0.1rem 0.1rem 0.2rem palette.$box-shadow-dark;
+			@include mixins.dimensions ($width: 90%, $height: 60%);		
 
 			&:hover {
-				box-shadow: 0.1rem 0.1rem 0.5rem 0 palette.$secondary-font-color;
+				box-shadow: 0.1rem 0.1rem 0.3rem palette.$secondary-font-color;
+				border-radius:  0 2.5rem 0 2.5rem;
 			}
 
 		}

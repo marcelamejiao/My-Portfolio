@@ -16,7 +16,7 @@
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: space-around;
-		
+			
 
 		&--element {
 			width: 50%;
@@ -25,9 +25,13 @@
 			margin: 0.5rem;
 			border-bottom: 0.1rem solid palette.$details-color;
 			letter-spacing: 0.1em;
+			background-color: palette.$background-transparency;
+			border-radius: 1rem 0 1rem 0;
+			height: 50px;
 
 			&:hover {
 				box-shadow: 0.2rem 0.2rem 0.5rem 0 palette.$details-color;
+				background-color: palette.$tertiary-font-color;
 				border: none;
 				border-radius: 1rem 0 1rem 0;
 				transform: translateY(-5px);

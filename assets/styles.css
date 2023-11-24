@@ -76,7 +76,7 @@
   border-left: 0.4rem solid rgb(125, 160, 140);
   border-right: 0.4rem solid rgb(125, 160, 140);
   opacity: 0.9;
-  box-shadow: 0.1rem 0.1rem 0.5rem 0 rgb(134, 112, 112);
+  box-shadow: 0.1rem 0.1rem 0.3rem 0 rgb(134, 112, 112);
 }
 .about__container--img:hover {
   box-shadow: 0.1rem 0.1rem 0.5rem 0 rgb(134, 112, 112);
@@ -97,14 +97,15 @@
   text-align: center;
   justify-content: center;
   padding: 1rem 1rem 1rem 1rem;
-  border-radius: 0.3rem;
-  background-color: rgba(255, 255, 255, 0.4901960784);
-  box-shadow: 0.2rem 0.2rem 1rem 0 rgba(0, 0, 0, 0.75);
+  border-radius: 2.5rem 0 2.5rem 0;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0.1rem 0.1rem 0.2rem rgba(0, 0, 0, 0.75);
   width: 90%;
   height: 60%;
 }
 .about__container--text:hover {
-  box-shadow: 0.1rem 0.1rem 0.5rem 0 rgb(134, 112, 112);
+  box-shadow: 0.1rem 0.1rem 0.3rem rgb(134, 112, 112);
+  border-radius: 0 2.5rem 0 2.5rem;
 }
 
 @media only screen and (min-width: 577px) and (max-width: 768px) {
@@ -153,9 +154,13 @@
   margin: 0.5rem;
   border-bottom: 0.1rem solid rgb(125, 160, 140);
   letter-spacing: 0.1em;
+  background-color: rgba(255, 255, 255, 0.4901960784);
+  border-radius: 1rem 0 1rem 0;
+  height: 50px;
 }
 .skills__list--element:hover {
   box-shadow: 0.2rem 0.2rem 0.5rem 0 rgb(125, 160, 140);
+  background-color: rgb(255, 255, 255);
   border: none;
   border-radius: 1rem 0 1rem 0;
   transform: translateY(-5px);
@@ -202,10 +207,10 @@
   width: 100%;
   padding: 1rem;
   margin: 1rem;
-  border-radius: 1.5rem;
-  box-shadow: 0.1rem 0.1rem 0.5rem 0 rgb(134, 112, 112);
+  border-radius: 1rem;
+  box-shadow: 0.1rem 0.1rem 0.1rem 0 rgb(134, 112, 112);
   opacity: 0.9;
-  background-color: rgba(255, 255, 255, 0.4901960784);
+  background-color: rgb(255, 255, 255);
 }
 .card:hover {
   box-shadow: 0.2rem 0.2rem 1rem 0 rgb(134, 112, 112);
@@ -257,7 +262,7 @@
   }
   .card {
     width: 40%;
-    margin: 0.5rem;
+    margin: 1rem;
   }
 }
 .footer {
@@ -295,6 +300,10 @@
   }
   .footer__container--text {
     font-size: 4.5rem;
+  }
+  .footer__container--text:hover {
+    transform: rotate3d(0, 0, 1, -360deg);
+    transition: all 1s ease-in;
   }
   .footer__container--link {
     font-size: 1.5rem;
