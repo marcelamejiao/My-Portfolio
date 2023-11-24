@@ -36,7 +36,7 @@
 			color: palette.$secondary-font-color;
 			text-align: center;
 			justify-content: center;
-			padding: 1rem 1rem 1rem 1rem;
+			padding: 1rem 0.5rem 1rem 0.5rem;
 			border-radius: 2.5rem 0 2.5rem 0;
 			background-color: palette.$tertiary-font-color;
 			box-shadow: 0.1rem 0.1rem 0.2rem palette.$box-shadow-dark;
@@ -66,7 +66,11 @@
 // Desktop
 
 @include mixins.desktop {
-	.about {		
+	.about {	
+		display: flex;
+		align-items: center;
+
+		
 		&__container {
 			margin-top: 6vh;
 
@@ -76,7 +80,7 @@
 
 			&--text {
 				font-size:typography.$text-desktop;
-				padding: 3rem 1rem 3rem 1rem;
+				padding: 1rem 1rem 1rem 1rem;
 
 				&:hover {
 					transform: translateY(-30px);
