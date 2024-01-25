@@ -231,7 +231,7 @@
   width: 100%;
   object-fit: cover;
   object-position: top;
-  max-height: 8rem;
+  max-height: 12rem;
   border-radius: 1.5rem;
 }
 .card__title {
