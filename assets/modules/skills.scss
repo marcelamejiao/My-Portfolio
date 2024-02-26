@@ -10,6 +10,7 @@
 	&__header {
 		margin: 6vh 0 1rem 0;
 		@include mixins.headings;
+		@include mixins.pulse;
 	}
 
 	&__list {

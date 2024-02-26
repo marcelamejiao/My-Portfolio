@@ -30,6 +30,7 @@
 
 		&--header {
 			@include mixins.headings;
+			@include mixins.pulse;
 		}
 
 		&--text {

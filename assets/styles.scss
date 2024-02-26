@@ -38,6 +38,7 @@ body {
 	text-align: center;
 
 	&--title {
+
 		color: palette.$tertiary-font-color;
 		font-size: typography.$heading-desktop;
 		overflow: hidden; 
@@ -49,7 +50,7 @@ body {
 			from { width: 0 }
 			to { width: 100% }
 		}
-
+		
 		&:hover {
 			transform: scale(1.2);
 			transform-origin: center;
@@ -65,6 +66,7 @@ body {
 		border-radius: 2rem;
 		margin-top: 3rem;
 		box-shadow: 0.1rem 0.1rem 0.3rem 0 palette.$box-shadow-light;
+		@include mixins.animation;
 
 		&:hover {
 			background-color: palette.$main-background-color;

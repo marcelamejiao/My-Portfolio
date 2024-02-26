@@ -91,6 +91,15 @@
   border-top: 0.1rem solid rgb(255, 255, 255);
   text-align: center;
   word-break: break-word;
+  animation: pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
 }
 .about__container--text {
   color: rgb(134, 112, 112);
@@ -145,6 +154,15 @@
   border-top: 0.1rem solid rgb(255, 255, 255);
   text-align: center;
   word-break: break-word;
+  animation: pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
 }
 .skills__list {
   display: flex;
@@ -200,6 +218,15 @@
   border-top: 0.1rem solid rgb(255, 255, 255);
   text-align: center;
   word-break: break-word;
+  animation: pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
 }
 .projects__container {
   display: flex;
@@ -284,8 +311,19 @@
   gap: 2rem;
 }
 .footer__container--text {
+  animation: bounce 1s infinite;
   color: rgb(255, 255, 255);
   font-size: 3.5rem;
+}
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(-25%);
+    animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+  }
+  50% {
+    transform: translateY(0);
+    animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  }
 }
 .footer__container--link {
   color: rgb(255, 255, 255);
@@ -370,6 +408,17 @@ body {
   border-radius: 2rem;
   margin-top: 3rem;
   box-shadow: 0.1rem 0.1rem 0.3rem 0 rgba(0, 0, 0, 0.554);
+  animation: bounce 1s infinite;
+}
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(-25%);
+    animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+  }
+  50% {
+    transform: translateY(0);
+    animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  }
 }
 .landingpage__container--button:hover {
   background-color: rgb(251, 246, 242);
@@ -398,5 +447,3 @@ body {
     transition: all 1s ease-in;
   }
 }
-
-/*# sourceMappingURL=styles.css.map */
